@@ -1,8 +1,4 @@
 * {font-family: Sans-Serif;
-border-radius: 10px;
-box-shadow: 5px 5px 5px;
-padding: 5px;
-text-align: center;
 -webkit-box-sizing: border-box;
 -moz-box-sizing: border-box;
 -ms-box-sizing: border-box;
@@ -10,74 +6,60 @@ box-sizing: border-box;
 }
 
 body {
-  box-shadow: 0px 0px 0px;
   background-color: #23265b;
-  font-size: 1.5em;
-}
-
-img {
-  box-shadow: 0px 0px 0px;
-  margin-top: 25%;
-  margin-bottom: 25%;
-}
-
-p {
-  box-shadow: 0px 0px 0px;
-  text-align: left;
-  margin-top: 25%;
-  margin-bottom: 25%;
-}
-
-p.entry {
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 25%;
-  margin-bottom: 25%;
-  box-shadow: 0px 0px 0px;
-  text-align: left;
-  margin-top: 25%;
-  margin-bottom: 25%;
 }
 
 .row {
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: #23265b;
     display: flex; flex-wrap;
   }
-.col-1 {
-    width: 8.33%;
+
+.header {
+  background-color: orange;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 4.0em;
 }
-.col-2 {
-    width: 16.66%
+
+.subHeader {
+  background-color: #e89292;
+  padding: 1px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 3.0em;
 }
-.col-3 {
-    width: 25%;
+
+.blogPost {
+  width: 50%;
+  border-radius: 5px;
+  text-align: left;
+  font-size: 1.25em;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  margin-right: 2.5px;
 }
-.col-4 {
-    width: 33.33%;
+
+.blogPostTitle {
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  text-align: center;
+  font-size: 2.0em;
 }
-.col-5 {
-    width: 41.66%;
+
+.blogPostImage {
+  width: 50%;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  margin-left: 2.5px;
 }
-.col-6 {
-    width: 50%;
-    box-shadow: 0px 0px 0px;
-}
-.col-7 {
-    width: 58.33%;
-}
-.col-8 {
-    width: 66.66%;
-}
-.col-9 {
-    width: 75%;
-}
-.col-10 {
-    width: 83.33%;
-}
-.col-11 {
-    width: 91.66%;
-}
-.col-12 {
-    width: 100%;
+
+.blogPostAsset {
+  width: 100%;
 }
