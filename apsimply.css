@@ -9,19 +9,48 @@ body {
   background-color: #23265b;
 }
 
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: gray;
+}
+
 .row {
     width: 100%;
     background-color: #23265b;
     display: flex; flex-wrap;
   }
 
+.line {
+    border-bottom: 1px;
+    border-style: solid;
+  }
+
+  .space {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
 .header {
   background-color: orange;
-  margin-bottom: 20px;
   padding: 20px;
   border-radius: 5px;
   text-align: center;
   font-size: 4.0em;
+}
+
+.headerImage {
+  background-color: orange;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .subHeader {
@@ -32,19 +61,53 @@ body {
   font-size: 3.0em;
 }
 
+.subHeaderTop {
+  background-color: #e89292;
+  padding: 1px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  text-align: center;
+  font-size: 3.0em;
+}
+
+.subHeaderBottom {
+  background-color: #e89292;
+  padding: 1px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  font-size: 3.0em;
+}
+
+.menu {
+  background-color: #ffffff;
+  padding: 1px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 2.0em;
+}
+
+.menuTitle {
+  background-color: #ffffff;
+  padding: 1px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 2.5em;
+}
+
 .blogPost {
   width: 50%;
   border-radius: 5px;
   text-align: left;
   font-size: 1.25em;
   padding: 10px;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   margin-right: 2.5px;
 }
 
 .blogPostTitle {
   border-radius: 5px;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 5px;
@@ -56,7 +119,7 @@ body {
   width: 50%;
   border-radius: 5px;
   padding: 10px;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   margin-left: 2.5px;
 }
 
