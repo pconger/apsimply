@@ -93,10 +93,11 @@ a:hover {
   width: 50%;
   border-radius: 5px;
   text-align: left;
-  font-size: 1.25em;
+  font-size: 1.0em;
   padding: 10px;
   background-color: #ffffff;
   margin-right: 2.5px;
+  margin-left: 10%;
 }
 
 .blogPostTitle {
@@ -104,9 +105,11 @@ a:hover {
   background-color: #ffffff;
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
   padding: 5px;
   text-align: center;
-  font-size: 2.0em;
+  font-size: 1.5em;
 }
 
 .blogPostImage {
@@ -115,6 +118,7 @@ a:hover {
   padding: 10px;
   background-color: #ffffff;
   margin-left: 2.5px;
+  margin-right: 10%;
 }
 
 .blogPostAsset {
