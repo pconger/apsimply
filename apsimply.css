@@ -12,11 +12,13 @@ body {
 a:link {
   text-decoration: none;
   color: black;
+  text-decoration: underline;
 }
 
 a:visited {
   text-decoration: none;
   color: black;
+  text-decoration: underline;
 }
 
 a:hover {
