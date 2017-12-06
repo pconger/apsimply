@@ -53,7 +53,7 @@ a:hover {
 
 .headerImage {
   background-color: orange;
-  padding: 10px;
+  padding: 15px;
   border-radius: 5px;
   margin-left: 10%;
   margin-right: 10%;
@@ -94,7 +94,7 @@ a:hover {
   border-radius: 5px;
   text-align: left;
   font-size: 1.0em;
-  padding: 10px;
+  padding: 15px;
   background-color: #ffffff;
   margin-right: 2.5px;
   margin-left: 10%;
@@ -115,7 +115,7 @@ a:hover {
 .blogPostImage {
   width: 50%;
   border-radius: 5px;
-  padding: 10px;
+  padding: 15px;
   background-color: #ffffff;
   margin-left: 2.5px;
   margin-right: 10%;
