@@ -1,8 +1,6 @@
 * {font-family: Sans-Serif;
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
--ms-box-sizing: border-box;
 box-sizing: border-box;
+flex-wrap: wrap;
 }
 
 body {
@@ -24,12 +22,6 @@ a:visited {
 a:hover {
   color: gray;
 }
-
-.row {
-    width: 100%;
-    background-color: #23265b;
-    display: flex; flex-wrap;
-  }
 
 .line {
     border-bottom: 1px;
@@ -89,38 +81,43 @@ a:hover {
   font-size: 1.5em;
 }
 
-.blogPost {
-  width: 50%;
-  border-radius: 5px;
-  text-align: left;
-  font-size: 1.0em;
-  padding: 15px;
-  background-color: #ffffff;
-  margin-right: 2.5px;
-  margin-left: 10%;
+.row {
+    width: 100%;
+  }
+
+  .row::after {
+      content: "";
+      clear: both;
+      display: table;
+  }
+
+  @media only screen and (min-width: 768px) {
+
+* {background-color: red;}
+
+  .col-6 {width: 50%;}
+
+  .col-12 {width: 100%;}
+
+  }
+
+  [class*="col-"] {
+    width: 100%;
+    float: left;
+    padding: 15px;
+    border: 2px solid #23265b;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+
+img {
+width: 100%;
+max-width: 700px;
+  height: auto;
 }
 
-.blogPostTitle {
-  border-radius: 5px;
-  background-color: #ffffff;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding: 5px;
-  text-align: center;
-  font-size: 1.5em;
-}
-
-.blogPostImage {
-  width: 50%;
-  border-radius: 5px;
-  padding: 15px;
-  background-color: #ffffff;
-  margin-left: 2.5px;
-  margin-right: 10%;
-}
-
-.blogPostAsset {
-  width: 100%;
+iframe{
+width: 100%;
+  max-width: 700px;
+  height: inherit;
 }
