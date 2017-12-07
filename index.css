@@ -11,6 +11,7 @@ a:link {
   text-decoration: none;
   color: black;
   text-decoration: underline;
+
 }
 
 a:visited {
@@ -23,62 +24,63 @@ a:hover {
   color: gray;
 }
 
-.line {
-    border-bottom: 1px;
-    border-style: solid;
-  }
-
-  .space {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
 .header {
   background-color: orange;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding: 20px;
   border-radius: 5px;
   text-align: center;
   font-size: 3.0em;
+  margin-bottom: 5px;
 }
 
-.headerImage {
+.headerImageLeft {
   background-color: orange;
-  padding: 15px;
   border-radius: 5px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-top: 2.5px;
+}
+
+.headerImageRight {
+  background-color: orange;
+  border-radius: 5px;
+  margin-top: 2.5px;
 }
 
 .subHeader {
   background-color: #e89292;
-  padding: 1px;
-  margin-left: 10%;
-  margin-right: 10%;
   border-radius: 5px;
   text-align: center;
   font-size: 2.0em;
+margin-top: 2.5px;
+margin-bottom: 2.5px;
+
 }
 
 .menu {
   background-color: #ffffff;
-  padding: 1px;
-  border-radius: 5px;
-  margin-left: 10%;
-  margin-right: 10%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   text-align: center;
-  font-size: 1.0em;
+  margin-top: 2.5px;
+  margin-bottom: 2.5px;
 }
 
-.menuTitle {
+.featured {
   background-color: #ffffff;
-  padding: 1px;
-  margin-left: 10%;
-  margin-right: 10%;
-  border-radius: 5px;
+  padding-top: 5px;
+  border-top: 2px black solid;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 2.0em;
+}
+
+img {
+width: 100%;
+  height: auto;
+}
+
+iframe{
+width: 100%;
+  height: auto;
 }
 
 .row {
@@ -91,33 +93,55 @@ a:hover {
       display: table;
   }
 
-  @media only screen and (min-width: 768px) {
+  .row {
+    width: 100%;
+  }
 
-* {background-color: red;}
-
-  .col-6 {width: 50%;}
-
-  .col-12 {width: 100%;}
-
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 
   [class*="col-"] {
     width: 100%;
     float: left;
-    padding: 15px;
-    border: 2px solid #23265b;
-    border-radius: 5px;
-    background-color: #ffffff;
+    padding: 10px;
   }
 
-img {
-width: 100%;
-max-width: 700px;
-  height: auto;
-}
+  @media only screen and (min-width: 768px) {
 
-iframe{
-width: 100%;
-  max-width: 700px;
-  height: inherit;
+       .col-1 {width: 8.33%;}
+       .col-2 {width: 16.66%;}
+       .col-3 {width: 25%;}
+       .col-4 {width: 33.33%;}
+       .col-5 {width: 41.66%;}
+       .col-6 {width: 50%;}
+       .col-7 {width: 58.33%;}
+       .col-8 {width: 66.66%;}
+       .col-9 {width: 75%;}
+       .col-10 {width: 83.33%;}
+       .col-11 {width: 91.66%;}
+       .col-12 {width: 100%;}
+
+       .desktopMargin {
+         margin-left: 8.33%;
+         margin-right: 8.33%;
+       }
+
+       .desktopMarginLeft {
+         margin-left: 8.33%;
+       }
+       .desktopMarginRight{
+         margin-right: 8.33%;
+       }
+
+       .headerImageLeft{
+         border-right: 1.25px solid;
+       }
+
+       .headerImageRight {
+         border-left: 1.25px solid;
+       }
+
 }
