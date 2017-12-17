@@ -99,6 +99,18 @@ iframe {
      .col-11 {width: 91.66%;}
      .col-12 {width: 100%;}
 
+     .desktopMargin {
+              margin-left: 8.33%;
+              margin-right: 8.33%;
+            }
+
+            .desktopMarginLeft {
+              margin-left: 8.33%;
+            }
+            .desktopMarginRight{
+              margin-right: 8.33%;
+            }
+
      .menu {
        border-top-right-radius: 5px;
        border-top-left-radius: 10px;
