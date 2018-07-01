@@ -31,6 +31,11 @@ body {
   display: table;
 }
 
+[class*="col-"] {
+  width: 100%;
+  float: left;
+}
+
 @media only screen and (min-width: 768px) {
      .col-1 {width: 8.33%;}
      .col-2 {width: 16.66%;}
@@ -44,4 +49,5 @@ body {
      .col-10 {width: 83.33%;}
      .col-11 {width: 91.66%;}
      .col-12 {width: 100%;}
+     .rightContainer {margin-left:10px;}
    }
