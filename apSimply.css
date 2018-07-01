@@ -1,3 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+* {
+  background-color: #a5c7ff;
+  font-family: 'Roboto';
+}
+
+.container {
+  background-color: #fffaf2;
+}
+
+.roundedContainer {
+  border-radius: 5px 5px 5px;
+  border: 1px solid #e8e8e8;
+  padding: 10px;
+  margin: 5px 0px 5px 0px;
+}
+
 .row {
   width: 100%;
 }
@@ -8,13 +26,7 @@
   display: table;
 }
 
-[class*="col-"] {
-  width: 100%;
-  float: left;
-  padding: 10px;
-}
-
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
 
      .col-1 {width: 8.33%;}
      .col-2 {width: 16.66%;}
@@ -28,3 +40,4 @@
      .col-10 {width: 83.33%;}
      .col-11 {width: 91.66%;}
      .col-12 {width: 100%;}
+   }
