@@ -23,16 +23,13 @@ body {
 .icon {
   border-radius: 50%;
   width: 60px;
-  margin: 10px 15px 10px 10px;
+  margin-right: 15px;
   float: left;
 }
 
 .description {
-  height: 100px;
-}
-
-.descriptionText {
   padding: 15px;
+  overflow: hidden;
 }
 
 .description:hover {
@@ -69,6 +66,10 @@ body {
 .blogLink {
   text-decoration: none;
   color: inherit;
+}
+
+.post {
+  padding: 40px;
 }
 
 .row {
